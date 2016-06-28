@@ -15,6 +15,7 @@
 		027180F31D22465000668BDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027180F11D22465000668BDF /* LaunchScreen.storyboard */; };
 		027180FE1D22465000668BDF /* MVVMWithRACDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 027180FD1D22465000668BDF /* MVVMWithRACDemoTests.m */; };
 		027181091D22465000668BDF /* MVVMWithRACDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 027181081D22465000668BDF /* MVVMWithRACDemoUITests.m */; };
+		2A217ACB6B302A207AE09265 /* libPods-MVVMWithRACDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5843BA0AD112C919DAC10E /* libPods-MVVMWithRACDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		027181041D22465000668BDF /* MVVMWithRACDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMWithRACDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		027181081D22465000668BDF /* MVVMWithRACDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMWithRACDemoUITests.m; sourceTree = "<group>"; };
 		0271810A1D22465000668BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F5843BA0AD112C919DAC10E /* libPods-MVVMWithRACDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMWithRACDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F782995517FACE2C32320B7 /* Pods-MVVMWithRACDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMWithRACDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMWithRACDemo/Pods-MVVMWithRACDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AB41187F862FE86162C6C307 /* Pods-MVVMWithRACDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMWithRACDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMWithRACDemo/Pods-MVVMWithRACDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A217ACB6B302A207AE09265 /* libPods-MVVMWithRACDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				027180FC1D22465000668BDF /* MVVMWithRACDemoTests */,
 				027181071D22465000668BDF /* MVVMWithRACDemoUITests */,
 				027180E11D22465000668BDF /* Products */,
+				258DDF00DFA03C3875809F0B /* Pods */,
+				39D6EAA15A8312743242149C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,23 @@
 			path = MVVMWithRACDemoUITests;
 			sourceTree = "<group>";
 		};
+		258DDF00DFA03C3875809F0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB41187F862FE86162C6C307 /* Pods-MVVMWithRACDemo.debug.xcconfig */,
+				4F782995517FACE2C32320B7 /* Pods-MVVMWithRACDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		39D6EAA15A8312743242149C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F5843BA0AD112C919DAC10E /* libPods-MVVMWithRACDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0271810D1D22465000668BDF /* Build configuration list for PBXNativeTarget "MVVMWithRACDemo" */;
 			buildPhases = (
+				5FE5FF09E338EE6062FCC4B2 /* [CP] Check Pods Manifest.lock */,
 				027180DC1D22465000668BDF /* Sources */,
 				027180DD1D22465000668BDF /* Frameworks */,
 				027180DE1D22465000668BDF /* Resources */,
+				615CB9AAFEE3D40FD07A39DA /* [CP] Embed Pods Frameworks */,
+				734DF9DE5BC9D830E21E0D67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FE5FF09E338EE6062FCC4B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		615CB9AAFEE3D40FD07A39DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVMWithRACDemo/Pods-MVVMWithRACDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		734DF9DE5BC9D830E21E0D67 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVMWithRACDemo/Pods-MVVMWithRACDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		027180DC1D22465000668BDF /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		0271810E1D22465000668BDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB41187F862FE86162C6C307 /* Pods-MVVMWithRACDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MVVMWithRACDemo/Info.plist;
@@ -424,6 +500,7 @@
 		};
 		0271810F1D22465000668BDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F782995517FACE2C32320B7 /* Pods-MVVMWithRACDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MVVMWithRACDemo/Info.plist;
@@ -498,6 +575,7 @@
 				0271810F1D22465000668BDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		027181101D22465000668BDF /* Build configuration list for PBXNativeTarget "MVVMWithRACDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +584,7 @@
 				027181121D22465000668BDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		027181131D22465000668BDF /* Build configuration list for PBXNativeTarget "MVVMWithRACDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +593,7 @@
 				027181151D22465000668BDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
