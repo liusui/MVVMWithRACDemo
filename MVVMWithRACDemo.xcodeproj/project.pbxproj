@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0222D8DC1D225BE400C617DB /* AddressBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0222D8DB1D225BE400C617DB /* AddressBookCell.m */; };
+		0222D8DF1D225E2C00C617DB /* AddressBookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0222D8DE1D225E2C00C617DB /* AddressBookViewModel.m */; };
+		0252A4321D236E92001651FC /* AddressBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0252A4311D236E92001651FC /* AddressBookModel.m */; };
 		027180E51D22465000668BDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 027180E41D22465000668BDF /* main.m */; };
 		027180E81D22465000668BDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 027180E71D22465000668BDF /* AppDelegate.m */; };
 		027180EB1D22465000668BDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027180EA1D22465000668BDF /* ViewController.m */; };
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0222D8DA1D225BE400C617DB /* AddressBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookCell.h; sourceTree = "<group>"; };
+		0222D8DB1D225BE400C617DB /* AddressBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookCell.m; sourceTree = "<group>"; };
+		0222D8DD1D225E2C00C617DB /* AddressBookViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookViewModel.h; sourceTree = "<group>"; };
+		0222D8DE1D225E2C00C617DB /* AddressBookViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookViewModel.m; sourceTree = "<group>"; };
+		0252A4301D236E92001651FC /* AddressBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookModel.h; sourceTree = "<group>"; };
+		0252A4311D236E92001651FC /* AddressBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookModel.m; sourceTree = "<group>"; };
 		027180E01D22465000668BDF /* MVVMWithRACDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMWithRACDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		027180E41D22465000668BDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		027180E61D22465000668BDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +121,12 @@
 				027180E71D22465000668BDF /* AppDelegate.m */,
 				027180E91D22465000668BDF /* ViewController.h */,
 				027180EA1D22465000668BDF /* ViewController.m */,
+				0222D8DA1D225BE400C617DB /* AddressBookCell.h */,
+				0222D8DB1D225BE400C617DB /* AddressBookCell.m */,
+				0222D8DD1D225E2C00C617DB /* AddressBookViewModel.h */,
+				0222D8DE1D225E2C00C617DB /* AddressBookViewModel.m */,
+				0252A4301D236E92001651FC /* AddressBookModel.h */,
+				0252A4311D236E92001651FC /* AddressBookModel.m */,
 				027180EC1D22465000668BDF /* Main.storyboard */,
 				027180EF1D22465000668BDF /* Image.xcassets */,
 				027180F11D22465000668BDF /* LaunchScreen.storyboard */,
@@ -346,6 +361,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				027180EB1D22465000668BDF /* ViewController.m in Sources */,
+				0222D8DF1D225E2C00C617DB /* AddressBookViewModel.m in Sources */,
+				0222D8DC1D225BE400C617DB /* AddressBookCell.m in Sources */,
+				0252A4321D236E92001651FC /* AddressBookModel.m in Sources */,
 				027180E81D22465000668BDF /* AppDelegate.m in Sources */,
 				027180E51D22465000668BDF /* main.m in Sources */,
 			);
