@@ -4,4 +4,6 @@ MVVM弱化controller，强调view model与view的bind。
 controller中的业务逻辑尽量转移到view model中，除开管理view的生命周期不谈，controller只是起到协调view model与view的作用。
 view model的主要职责是处理业务逻辑并给view提供数据，view model不关心view从而解耦也方便做单元测试。
 
-而view model和view，controller之间交互要优雅的实现就避不开RAC。
+而model，view model和view，controller之间交互要优雅的实现就避不开RAC。
+
+这里用RAC结合MVVM实现一个查询系统通讯录的例子。
