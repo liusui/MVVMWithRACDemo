@@ -51,7 +51,8 @@
                 model.phone = (__bridge NSString *)(ABMultiValueCopyValueAtIndex(phones, j));
             }
             //获取当前联系人头像图片
-            NSData*userImage=(__bridge NSData*)(ABPersonCopyImageData(people));
+            NSData *userImage=(__bridge NSData*)(ABPersonCopyImageData(people));
+            model.headImg = userImage;
             [peopleArray addObject:model];
         }
         [subject sendNext:peopleArray];

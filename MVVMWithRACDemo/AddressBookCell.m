@@ -25,6 +25,7 @@
 - (void)bindWithViewModel:(AddressBookModel *)model{
     self.name.text = model.name;
     self.phoneLabel.text = model.phone;
+    self.headImg.image = [UIImage imageWithData:model.headImg];
 }
 
 @end
